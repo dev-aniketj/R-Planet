@@ -62,7 +62,7 @@ hospital_df <- data.frame(
   patient_id = c(1012, 1043, 1127, 1882),
   age = c(32, 41, 27, 53),
   diabetes = c(102.823, 83.514, 92.311, 110.432),
-  status = c('alive', 'alive', 'alive', 'alive')
+  status = c('Good', 'Critical', 'Serious', 'Fair')
 )
 cat('ID\tAGE\tDIABETES\tSTATUS')
 for (i in 1:4){
@@ -114,3 +114,41 @@ for(j in 2:range){
   #for next number.
   flag = TRUE
 }
+
+#ques15
+n <- as.integer(readline(prompt='Enter the number : '))
+i<-1
+fact = 1
+while(i<=n){
+  fact<-fact*i
+  i <- i+1
+}
+cat('Factorial of', n, 'is', fact)
+
+#ques16
+num1 = as.integer(readline(prompt='Enter the number1 : '))
+num2 = as.integer(readline(prompt='Enter the number2 : '))
+lcm = if(num1 > num2){
+  num1
+}else{
+  num2
+}
+while(TRUE){
+  if((lcm%%num1==0) && (lcm%%num2==0)){
+    cat('LCM of',num1,'and',num2,'is',lcm)
+    break
+  }
+  lcm = lcm+1
+}
+
+#ques17
+number1 = as.integer(readline(prompt = 'Enter the number 1 : '))
+number2 = as.integer(readline(prompt = 'Enter the number 2 : '))
+i<-1
+while((i<number1) && (i<=number2)){
+  if((number1%%i==0) && (number2%%i==0)){
+    gcd = i
+  }
+  i = i+1
+}
+cat('GCD of',number1,'and',number2,'is',gcd)
