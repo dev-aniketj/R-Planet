@@ -1,16 +1,17 @@
 #ques1
 vec1 <- c(1,3,5)
 vec2 <- c(2,4,6)
-cat('Addition of two vetors : ', (vec1+vec2))
-cat('Multiplication of two vetors : ', (t(vec1)*vec2))
-cat('Division of two vetors : ', (vec2/vec1))
-cat('Floor Division of two vetors : ', (vec2%/%vec1))
+cat('Addition of two vectors : ', (vec1+vec2))
+cat('Multiplication of two vectors : ', (t(vec1)*vec2))
+cat('Division of two vectors : ', (vec2/vec1))
+cat('Floor Division of two vectors : ', (vec2%/%vec1))
 
 #ques2
 vec<-c(4,1,2,3)
 mat<-matrix(c(3,2,4,1), nrow=2, ncol=2, byrow=TRUE)
 print(mat*vec)
 print(mat/vec)
+print(mat%/%vec)
 
 #ques3
 lst = list(
