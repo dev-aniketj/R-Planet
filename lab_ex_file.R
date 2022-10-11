@@ -97,6 +97,8 @@ df <- data.frame(
 )
 df[order(df$roll_no),]
 
+#ques9
+
 #ques10
 i=0
 repeat{
