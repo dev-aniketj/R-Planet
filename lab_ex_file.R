@@ -97,7 +97,9 @@ df <- data.frame(
 )
 df[order(df$roll_no),]
 
+
 #ques9
+
 
 #ques10
 i=0
@@ -176,5 +178,13 @@ add <- function(num1, num2){
 cat('Addition of 10, 20 is',add(10,20))
 
 #ques19
+vec <- c(2,4,6,8,10)
+search_element <- function(item){
+  if(item %in% vec){
+    print("TRUE")
+  }
+}
+search_element(6)
+
 
 
